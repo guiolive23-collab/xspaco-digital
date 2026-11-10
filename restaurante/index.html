@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brasa & Trem · Cozinha mineira na brasa · Uberlândia</title>
+<meta name="description" content="Cozinha mineira na brasa no centro de Uberlândia. Almoço executivo, rodízio de fim de semana e delivery pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1a120d;--bg2:#241912;--cream:#f5ead9;--muted:#c9b49a;--fire:#e2632b;--gold:#e9b44c;--r:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--cream);line-height:1.6;overflow-x:hidden}
+h1,h2,h3{font-family:Fraunces,serif;line-height:1.1}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:20;background:rgba(26,18,13,.85);backdrop-filter:blur(10px);border-bottom:1px solid #ffffff10}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:Fraunces,serif;font-size:1.4rem;font-weight:700}.logo span{color:var(--fire)}
+.links{display:flex;gap:28px;font-size:.95rem;color:var(--muted)}.links a:hover{color:var(--cream)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--fire);color:#fff;padding:14px 26px;border-radius:999px;font-weight:600;transition:.2s;box-shadow:0 10px 30px -10px var(--fire)}
+.btn:hover{transform:translateY(-2px);background:#f0733a}
+.btn.ghost{background:transparent;border:1.5px solid #ffffff30;box-shadow:none}
+.hero{position:relative;padding:110px 0 120px;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:auto -20% -60% -20%;height:120%;background:radial-gradient(closest-side,#e2632b55,transparent 70%);filter:blur(30px);animation:brasa 6s ease-in-out infinite alternate}
+@keyframes brasa{to{transform:scale(1.08) translateY(-20px);opacity:.8}}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.tag{display:inline-block;color:var(--gold);font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:18px}
+.hero h1{font-size:clamp(2.6rem,6vw,4.6rem);margin-bottom:22px}.hero h1 em{color:var(--fire);font-style:italic}
+.hero p{font-size:1.15rem;color:var(--muted);max-width:520px;margin-bottom:34px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.plate{aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#5a3a24,#2a1b12 60%,#140d09);position:relative;box-shadow:0 40px 80px -20px #000,inset 0 0 0 14px #ffffff08}
+.plate i{position:absolute;border-radius:50%}
+.plate .a{inset:18%;background:radial-gradient(circle at 40% 40%,#c8742f,#7a3a14)}
+.plate .b{width:22%;height:22%;top:22%;left:56%;background:radial-gradient(#7fae4c,#3d6420)}
+.plate .c{width:30%;height:16%;top:60%;left:24%;border-radius:40%;background:radial-gradient(#f1d27a,#c79a32)}
+.plate .d{width:12%;height:12%;top:40%;left:30%;background:#e9e2cf}
+.badge{position:absolute;bottom:6%;left:-4%;background:var(--cream);color:var(--bg);padding:14px 18px;border-radius:14px;font-weight:600;box-shadow:0 20px 40px -10px #000}
+.badge b{display:block;font-family:Fraunces;font-size:1.6rem;color:var(--fire)}
+section{padding:96px 0}
+.sec-h{text-align:center;max-width:620px;margin:0 auto 54px}.sec-h h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:14px}.sec-h p{color:var(--muted)}
+.menu{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--bg2);border:1px solid #ffffff0d;border-radius:var(--r);padding:28px;transition:.25s}
+.card:hover{transform:translateY(-4px);border-color:#e2632b55}
+.card .ico{width:48px;height:48px;border-radius:12px;background:#e2632b22;display:grid;place-items:center;margin-bottom:18px}
+.card h3{font-size:1.35rem;margin-bottom:8px}.card p{color:var(--muted);font-size:.95rem;margin-bottom:16px}
+.price{font-family:Fraunces;font-size:1.5rem;color:var(--gold)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.split h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:18px}.split p{color:var(--muted);margin-bottom:16px}
+.stats{display:flex;gap:40px;margin-top:28px}.stats b{font-family:Fraunces;font-size:2.2rem;color:var(--fire);display:block}.stats span{color:var(--muted);font-size:.9rem}
+.photo{border-radius:24px;aspect-ratio:4/5;background:linear-gradient(160deg,#3a2517,#160e09);position:relative;overflow:hidden}
+.photo:after{content:"";position:absolute;left:10%;right:10%;bottom:12%;height:40%;background:repeating-linear-gradient(90deg,#000 0 14px,#3b2a1c 14px 18px);border-radius:8px;opacity:.7}
+.photo:before{content:"";position:absolute;left:14%;right:14%;bottom:36%;height:30%;background:radial-gradient(ellipse at bottom,#ff8a3d,#e2632b88 40%,transparent 70%);filter:blur(6px);animation:brasa 2.5s ease-in-out infinite alternate}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rev{background:var(--bg2);border-radius:var(--r);padding:26px}.rev .st{color:var(--gold);letter-spacing:3px;margin-bottom:12px}.rev p{margin-bottom:16px}.rev small{color:var(--muted)}
+.info{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.info .card h3{font-size:1.15rem}
+.final{text-align:center;background:linear-gradient(135deg,#e2632b,#b8431a);border-radius:28px;padding:70px 30px}
+.final h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:14px}.final p{opacity:.9;margin-bottom:28px}
+.final .btn{background:var(--cream);color:var(--bg)}
+footer{padding:40px 0;color:var(--muted);font-size:.85rem;text-align:center}
+.wa{position:fixed;right:20px;bottom:20px;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 30px -5px #25d36688;z-index:30;animation:pulse 2.4s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 14px #25d36600}}
+.demo{background:var(--gold);color:var(--bg);text-align:center;font-size:.8rem;padding:6px;font-weight:600}
+.reveal{opacity:0;transform:translateY(24px);transition:.7s}.reveal.on{opacity:1;transform:none}
+@media(max-width:860px){.links{display:none}.hero .wrap,.split{grid-template-columns:1fr}.hero{padding:60px 0 80px}.plate{max-width:340px;margin:0 auto}.menu,.reviews,.info{grid-template-columns:1fr}section{padding:70px 0}.stats{gap:24px}}
+</style>
+</head>
+<body>
+<div class="demo">Site de demonstração criado pela Xspaço Digital</div>
+<nav><div class="wrap"><a class="logo" href="#">Brasa <span>&</span> Trem</a><div class="links"><a href="#cardapio">Cardápio</a><a href="#casa">A casa</a><a href="#avaliacoes">Avaliações</a><a href="#visite">Visite</a></div><a class="btn" href="#visite" style="padding:10px 20px">Reservar</a></div></nav>
+
+<header class="hero"><div class="wrap">
+<div><span class="tag">Cozinha mineira · Uberlândia</span>
+<h1>Comida de vó,<br>feita na <em>brasa.</em></h1>
+<p>Costela de 12 horas, feijão tropeiro de panela de ferro e pão de queijo saindo do forno. No centro de Uberlândia, do almoço ao jantar.</p>
+<div class="cta"><a class="btn" href="#visite">Pedir pelo WhatsApp</a><a class="btn ghost" href="#cardapio">Ver cardápio</a></div></div>
+<div style="position:relative"><div class="plate"><i class="a"></i><i class="b"></i><i class="c"></i><i class="d"></i></div><div class="badge"><b>4,9 ★</b>no Google</div></div>
+</div></header>
+
+<section id="cardapio"><div class="wrap">
+<div class="sec-h reveal"><span class="tag">Cardápio</span><h2>Os mais pedidos da casa</h2><p>Tudo feito no dia, com produtor do Triângulo Mineiro.</p></div>
+<div class="menu">
+<div class="card reveal"><div class="ico">🔥</div><h3>Costela 12 horas</h3><p>Desmancha no garfo. Acompanha mandioca cozida e vinagrete.</p><div class="price">R$ 64</div></div>
+<div class="card reveal"><div class="ico">🍲</div><h3>Tropeiro de ferro</h3><p>Feijão, bacon, couve, ovo e torresmo crocante.</p><div class="price">R$ 42</div></div>
+<div class="card reveal"><div class="ico">🧀</div><h3>Pão de queijo da Canastra</h3><p>Porção com 8, direto do forno a lenha.</p><div class="price">R$ 22</div></div>
+<div class="card reveal"><div class="ico">🍖</div><h3>Picanha na brasa</h3><p>400 g, arroz, farofa da casa e banana empanada.</p><div class="price">R$ 89</div></div>
+<div class="card reveal"><div class="ico">🥘</div><h3>Executivo do dia</h3><p>De segunda a sexta, das 11h às 15h, com suco natural.</p><div class="price">R$ 32</div></div>
+<div class="card reveal"><div class="ico">🍮</div><h3>Doce de leite com queijo</h3><p>A sobremesa mais mineira que existe.</p><div class="price">R$ 18</div></div>
+</div></div></section>
+
+<section id="casa" style="background:var(--bg2)"><div class="wrap split">
+<div class="photo reveal"></div>
+<div class="reveal"><span class="tag">A casa</span><h2>Fogo baixo, tempo longo e tempero de família.</h2>
+<p>A Brasa & Trem nasceu de um fogão a lenha no quintal. Hoje recebe famílias, empresas e quem quer matar a saudade da comida de roça.</p>
+<p>Espaço kids, estacionamento conveniado e música ao vivo aos sábados.</p>
+<div class="stats"><div><b>12h</b><span>de costela no fogo</span></div><div><b>+8 mil</b><span>clientes por mês</span></div><div><b>100%</b><span>produtor local</span></div></div></div>
+</div></section>
+
+<section id="avaliacoes"><div class="wrap">
+<div class="sec-h reveal"><span class="tag">Avaliações</span><h2>Quem provou, volta</h2></div>
+<div class="reviews">
+<div class="rev reveal"><div class="st">★★★★★</div><p>“A costela é a melhor de Uberlândia. Fui no almoço e voltei no jantar com a família.”</p><small>Exemplo de avaliação</small></div>
+<div class="rev reveal"><div class="st">★★★★★</div><p>“Atendimento rápido e o executivo tem preço justo. Virou meu almoço da semana.”</p><small>Exemplo de avaliação</small></div>
+<div class="rev reveal"><div class="st">★★★★★</div><p>“Pedi pelo WhatsApp e chegou quentinho em 30 minutos. Tropeiro perfeito.”</p><small>Exemplo de avaliação</small></div>
+</div></div></section>
+
+<section id="visite"><div class="wrap">
+<div class="info" style="margin-bottom:40px">
+<div class="card reveal"><h3>📍 Endereço</h3><p>Centro, Uberlândia - MG<br>(endereço do cliente aqui)</p></div>
+<div class="card reveal"><h3>🕒 Horários</h3><p>Seg a sex: 11h às 15h e 18h às 23h<br>Sáb e dom: 11h às 23h</p></div>
+<div class="card reveal"><h3>🛵 Delivery</h3><p>Toda Uberlândia pelo WhatsApp e pelos apps de entrega.</p></div>
+</div>
+<div class="final reveal"><h2>Bateu a fome?</h2><p>Reserve sua mesa ou peça agora. Respondemos em minutos.</p><a class="btn" href="#">Chamar no WhatsApp</a></div>
+</div></section>
+
+<footer>© 2026 Brasa & Trem (marca fictícia) · Site criado pela <b>Xspaço Digital</b></footer>
+<a class="wa" href="#" aria-label="WhatsApp"><svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.8-.1 1.4z"/></svg></a>
+<script>const io=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('on')),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el))</script>
+</body>
+</html>

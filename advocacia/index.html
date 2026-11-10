@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vieira & Lacerda Advocacia · Uberlândia</title>
+<meta name="description" content="Escritório de advocacia em Uberlândia: direito trabalhista, família, previdenciário e empresarial. Atendimento presencial e online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0d1420;--ink2:#151f30;--paper:#f4f1ea;--muted:#8b93a3;--gold:#c6a15b;--r:6px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Manrope,system-ui,sans-serif;background:var(--ink);color:var(--paper);line-height:1.7;overflow-x:hidden}
+h1,h2,h3{font-family:"Cormorant Garamond",serif;font-weight:600;line-height:1.08}
+a{color:inherit;text-decoration:none}.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.demo{background:var(--gold);color:var(--ink);text-align:center;font-size:.8rem;padding:6px;font-weight:700}
+nav{position:sticky;top:0;z-index:20;background:#0d1420ee;backdrop-filter:blur(10px);border-bottom:1px solid #c6a15b22}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{display:flex;align-items:center;gap:12px}.logo b{font-family:"Cormorant Garamond";font-size:1.5rem;letter-spacing:.02em}
+.logo i{width:40px;height:40px;border:1px solid var(--gold);display:grid;place-items:center;font-family:"Cormorant Garamond";color:var(--gold);font-style:normal;font-size:1.2rem}
+.links{display:flex;gap:30px;font-size:.88rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}.links a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:var(--ink);padding:15px 28px;border-radius:var(--r);font-weight:700;font-size:.92rem;letter-spacing:.03em;transition:.2s}
+.btn:hover{background:#d6b471;transform:translateY(-2px)}.btn.line{background:transparent;color:var(--paper);border:1px solid #f4f1ea40}
+.hero{position:relative;padding:120px 0 130px;overflow:hidden}
+.hero:before{content:"";position:absolute;right:-10%;top:-20%;width:60%;aspect-ratio:1;border:1px solid #c6a15b22;border-radius:50%}
+.hero:after{content:"";position:absolute;right:2%;top:0;width:40%;aspect-ratio:1;border:1px solid #c6a15b18;border-radius:50%}
+.hero .wrap{position:relative;z-index:1;max-width:1160px}
+.over{color:var(--gold);letter-spacing:.3em;text-transform:uppercase;font-size:.78rem;display:flex;align-items:center;gap:14px;margin-bottom:26px}.over:before{content:"";width:40px;height:1px;background:var(--gold)}
+.hero h1{font-size:clamp(2.8rem,7vw,5.6rem);max-width:860px;margin-bottom:26px}.hero h1 em{color:var(--gold)}
+.hero p{max-width:560px;color:var(--muted);font-size:1.1rem;margin-bottom:38px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.nums{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #c6a15b22;border-bottom:1px solid #c6a15b22}
+.nums div{padding:34px 26px;border-right:1px solid #c6a15b22}.nums div:last-child{border:0}
+.nums b{font-family:"Cormorant Garamond";font-size:2.6rem;color:var(--gold);display:block;line-height:1}.nums span{color:var(--muted);font-size:.88rem}
+section{padding:100px 0}.sec-h{max-width:640px;margin-bottom:56px}h2{font-size:clamp(2.2rem,4.5vw,3.4rem);margin-bottom:14px}.sec-h p{color:var(--muted)}
+.areas{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#c6a15b22;border:1px solid #c6a15b22}
+.area{background:var(--ink);padding:40px;transition:.3s;position:relative}
+.area:hover{background:var(--ink2)}.area .n{font-family:"Cormorant Garamond";color:var(--gold);font-size:1rem;letter-spacing:.2em}
+.area h3{font-size:1.9rem;margin:10px 0}.area p{color:var(--muted);margin-bottom:16px}.area a{color:var(--gold);font-weight:600;font-size:.9rem}
+.about{background:var(--paper);color:var(--ink)}.about .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.port{aspect-ratio:4/5;background:linear-gradient(160deg,#1d2a40,#0d1420);position:relative;border-radius:2px}
+.port:before{content:"";position:absolute;inset:18px;border:1px solid #c6a15b66}
+.port:after{content:"V&L";position:absolute;inset:0;display:grid;place-items:center;font-family:"Cormorant Garamond";font-size:5rem;color:#c6a15b55}
+.about p{color:#4a5262;margin-bottom:16px}.sig{font-family:"Cormorant Garamond";font-size:1.6rem;font-style:italic;margin-top:20px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.step{border-top:1px solid var(--gold);padding-top:24px}.step b{color:var(--gold);font-family:"Cormorant Garamond";font-size:1.2rem}.step h3{font-size:1.6rem;margin:6px 0 8px}.step p{color:var(--muted)}
+.quote{text-align:center;max-width:820px;margin:0 auto}.quote p{font-family:"Cormorant Garamond";font-size:clamp(1.6rem,3vw,2.3rem);line-height:1.3;font-style:italic;margin-bottom:20px}.quote small{color:var(--muted)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:60px;background:var(--ink2);padding:60px;border:1px solid #c6a15b22}
+.contact p{color:var(--muted)}form{display:grid;gap:14px}
+input,select,textarea{background:transparent;border:0;border-bottom:1px solid #f4f1ea33;color:var(--paper);padding:12px 2px;font:inherit}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--gold)}select option{color:var(--ink)}
+.note{font-size:.78rem;color:var(--muted);margin-top:30px}
+footer{padding:40px 0;text-align:center;color:var(--muted);font-size:.82rem;border-top:1px solid #c6a15b22}
+.wa{position:fixed;right:20px;bottom:20px;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 30px -5px #25d36688;z-index:30}
+.reveal{opacity:0;transform:translateY(24px);transition:.8s}.reveal.on{opacity:1;transform:none}
+@media(max-width:900px){.links{display:none}.hero{padding:70px 0 80px}.nums{grid-template-columns:1fr 1fr}.nums div:nth-child(2){border-right:0}.nums div{border-bottom:1px solid #c6a15b22}.areas,.about .wrap,.contact,.steps{grid-template-columns:1fr}.area{padding:30px}.contact{padding:30px 22px}section{padding:72px 0}.port{max-width:340px}}
+</style>
+</head>
+<body>
+<div class="demo">Site de demonstração criado pela Xspaço Digital</div>
+<nav><div class="wrap"><a class="logo" href="#"><i>VL</i><b>Vieira & Lacerda</b></a>
+<div class="links"><a href="#areas">Atuação</a><a href="#escritorio">Escritório</a><a href="#como">Como atuamos</a><a href="#contato">Contato</a></div>
+<a class="btn" href="#contato" style="padding:11px 20px">Falar com advogado</a></div></nav>
+
+<header class="hero"><div class="wrap">
+<div class="over">Advocacia · Uberlândia - MG</div>
+<h1>Seus direitos tratados com <em>seriedade</em> e linguagem clara.</h1>
+<p>Atuação estratégica em direito trabalhista, de família, previdenciário e empresarial. Atendimento presencial no Triângulo Mineiro e online em todo o Brasil.</p>
+<div class="cta"><a class="btn" href="#contato">Agendar uma consulta</a><a class="btn line" href="#areas">Áreas de atuação</a></div>
+</div></header>
+
+<div class="wrap"><div class="nums reveal">
+<div><b>20+</b><span>anos de atuação</span></div><div><b>4</b><span>áreas especializadas</span></div><div><b>24h</b><span>para o primeiro retorno</span></div><div><b>100%</b><span>processos acompanhados online</span></div>
+</div></div>
+
+<section id="areas"><div class="wrap">
+<div class="sec-h reveal"><div class="over">Áreas de atuação</div><h2>Onde podemos ajudar você</h2><p>Cada caso é conduzido por um advogado responsável, que acompanha você do início ao fim.</p></div>
+<div class="areas reveal">
+<div class="area"><span class="n">01</span><h3>Trabalhista</h3><p>Rescisões, horas extras, assédio, acidentes de trabalho e defesa de empresas.</p><a href="#contato">Saiba mais →</a></div>
+<div class="area"><span class="n">02</span><h3>Família e Sucessões</h3><p>Divórcio, guarda, pensão alimentícia, inventário e planejamento sucessório.</p><a href="#contato">Saiba mais →</a></div>
+<div class="area"><span class="n">03</span><h3>Previdenciário</h3><p>Aposentadorias, revisões, BPC/LOAS e benefícios negados pelo INSS.</p><a href="#contato">Saiba mais →</a></div>
+<div class="area"><span class="n">04</span><h3>Empresarial</h3><p>Contratos, abertura de empresas, recuperação de crédito e consultoria preventiva.</p><a href="#contato">Saiba mais →</a></div>
+</div></div></section>
+
+<section id="escritorio" class="about"><div class="wrap">
+<div class="port reveal"></div>
+<div class="reveal"><div class="over" style="color:#9a7a3c">O escritório</div><h2>Tradição mineira, atendimento moderno.</h2>
+<p>Fundado em Uberlândia, o Vieira & Lacerda une a experiência de duas décadas nos tribunais a uma forma direta e humana de atender.</p>
+<p>Você entende cada etapa do seu processo, recebe atualizações pelo WhatsApp e sabe exatamente com quem falar.</p>
+<div class="sig">Vieira & Lacerda</div></div>
+</div></section>
+
+<section id="como"><div class="wrap">
+<div class="sec-h reveal"><div class="over">Como atuamos</div><h2>Três passos, sem burocracia</h2></div>
+<div class="steps">
+<div class="step reveal"><b>I.</b><h3>Escuta</h3><p>Uma conversa inicial para entender o seu caso e os documentos que você já tem.</p></div>
+<div class="step reveal"><b>II.</b><h3>Estratégia</h3><p>Explicamos as opções, os riscos e os prazos antes de qualquer decisão.</p></div>
+<div class="step reveal"><b>III.</b><h3>Acompanhamento</h3><p>Atualizações frequentes e um advogado responsável disponível para você.</p></div>
+</div></div></section>
+
+<section style="padding-top:0"><div class="wrap"><div class="quote reveal">
+<p>“O bom advogado não é o que fala difícil, é o que faz o cliente entender o próprio direito.”</p><small>Princípio do escritório</small>
+</div></div></section>
+
+<section id="contato" style="padding-top:0"><div class="wrap"><div class="contact reveal">
+<div><div class="over">Contato</div><h2>Conte o seu caso</h2><p>Responderemos em até 24 horas úteis. As informações enviadas são tratadas com sigilo.</p>
+<p style="margin-top:24px">📍 Uberlândia - MG<br>🕒 Seg a sex, 8h às 18h<br>💻 Atendimento online em todo o Brasil</p></div>
+<form onsubmit="event.preventDefault();this.innerHTML='<p style=&quot;color:#c6a15b;font-size:1.2rem&quot;>Recebemos seu contato. Retornaremos em breve.</p>'">
+<input required placeholder="Nome completo"><input required placeholder="WhatsApp" inputmode="tel">
+<select><option>Área: Trabalhista</option><option>Família e Sucessões</option><option>Previdenciário</option><option>Empresarial</option></select>
+<textarea rows="3" placeholder="Resumo do caso (opcional)"></textarea>
+<button class="btn" style="border:0;cursor:pointer;justify-content:center;margin-top:8px">Enviar</button></form>
+</div><p class="note">Conteúdo informativo, em conformidade com o Provimento 205/2021 da OAB. Não constitui promessa de resultado.</p></div></section>
+
+<footer>© 2026 Vieira & Lacerda Advocacia (marca fictícia) · Site criado pela <b>Xspaço Digital</b></footer>
+<a class="wa" href="#" aria-label="WhatsApp"><svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.8-.1 1.4z"/></svg></a>
+<script>const io=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('on')),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el))</script>
+</body>
+</html>
